@@ -1,4 +1,4 @@
-Today I learned about FTP, SMTP and POP3:
+FTP, SMTP, POP3 and IMAP:
 1) FTP:
 	You can connect by FTP by typing:
 		ftp <ip>
