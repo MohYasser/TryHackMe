@@ -1,0 +1,30 @@
+Today I learned about FTP, SMTP and POP3:
+1) FTP:
+	You can connect by FTP by typing:
+		ftp <ip>
+	After that you can type the following as commands:
+		USER, PASS, RETR, STOR
+		Where RETR is used to get files from an ftp server, and
+		STOR is user to upload files to the ftp server.
+		You can list the files using (ls) commands
+2) SMTP:
+	You can send emails using SMTP by typing:
+		telnet <IP> 25
+	After that you can type the following commands:
+		EHLO/HELO - To initiate the smtp session
+		MAIL FROM: <email> - Specifies the email sender.
+		RCPT TO: <email> - Specifies the email receiver.
+		DATA - Indicates the start of the email content.
+		. - Indicates the end of the email content.
+3) POP3:
+	This is used to retrieve emails from a server.
+	You can start it by typing:
+		telnet <IP> 110
+	You then authenticate by typing: USER and PASS.
+	You can type: LIST to list all messages and their sizes.
+	Then type STAT to get how many messages there are and their total sizes.
+	Finally you can type: RETR <message number> to retrieve the actual message
+4) IMAP: Synchronizing emails.
+	For this, emails are kept on the server and synchronized across the email clients.
+	LOGIN <username> <password> authenticates the user
+	fetch 4 body[] - This is used to get the fourth message, body and header
